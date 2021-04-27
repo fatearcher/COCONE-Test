@@ -19,10 +19,18 @@ next.addEventListener("click", (e) => {
       item.className = "active";
     }
   });
-  silde.style = `right: ${320 * index}px;`;
-  s2 = setTimeout(() => {
-    set();
-  }, 3000);
+
+  if (window.matchMedia("(max-width: 500px)").matches) {
+    silde.style = `right: ${280 * index}px;`;
+    s2 = setTimeout(() => {
+      set();
+    }, 3000);
+  } else {
+    silde.style = `right: ${320 * index}px;`;
+    s2 = setTimeout(() => {
+      set();
+    }, 3000);
+  }
 });
 
 pre.addEventListener("click", (e) => {
@@ -39,10 +47,18 @@ pre.addEventListener("click", (e) => {
       item.className = "active";
     }
   });
-  silde.style = `right: ${320 * index}px;`;
-  s2 = setTimeout(() => {
-    set();
-  }, 3000);
+
+  if (window.matchMedia("(max-width: 500px)").matches) {
+    silde.style = `right: ${280 * index}px;`;
+    s2 = setTimeout(() => {
+      set();
+    }, 3000);
+  } else {
+    silde.style = `right: ${320 * index}px;`;
+    s2 = setTimeout(() => {
+      set();
+    }, 3000);
+  }
 });
 
 pre.addEventListener("mouseleave", (e, i) => {
@@ -95,7 +111,13 @@ spans.forEach((item, i) => {
     });
     item.className = "active";
     index = i;
-    silde.style = `right: ${320 * index}px;`;
+
+    if (window.matchMedia("(max-width: 500px)").matches) {
+      silde.style = `right: ${280 * index}px;`;
+    } else {
+      silde.style = `right: ${320 * index}px;`;
+    }
+
     clearTimeout(s2);
     s2 = setTimeout(() => {
       set();
@@ -125,7 +147,12 @@ function set() {
         item.className = "active";
       }
     });
-    silde.style = `right: ${320 * index}px;`;
+
+    if (window.matchMedia("(max-width: 500px)").matches) {
+      silde.style = `right: ${280 * index}px;`;
+    } else {
+      silde.style = `right: ${320 * index}px;`;
+    }
   }, 3000);
 }
 
