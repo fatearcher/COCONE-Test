@@ -20,7 +20,7 @@ ul li {
 @media (max-width: 500px) {
   .slide {
     width: 100%;
-    margin: 100px auto;
+    margin: 20px auto;
     position: relative;
     /* background-color: #ff82b5; */
   }
