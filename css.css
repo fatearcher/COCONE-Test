@@ -78,8 +78,8 @@ ul li {
 
 .pre {
   border-radius: 6%;
-  width: 60px;
-  height: 90px;
+  width: 58px;
+  height: 83px;
   background: radial-gradient(
     circle,
     rgba(255, 118, 175, 1) 43%,
@@ -91,13 +91,14 @@ ul li {
   align-items: center;
   position: absolute;
   top: 10px;
+  left: 2px;
   cursor: pointer;
 }
 
 .next {
   border-radius: 6%;
-  width: 60px;
-  height: 90px;
+  width: 58px;
+  height: 83px;
   background: radial-gradient(
     circle,
     rgba(255, 118, 175, 1) 43%,
@@ -109,6 +110,6 @@ ul li {
   align-items: center;
   position: absolute;
   top: 10px;
-  right: 0px;
+  right: 2px;
   cursor: pointer;
 }
